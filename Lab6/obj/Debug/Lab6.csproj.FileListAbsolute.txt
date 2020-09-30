@@ -1,0 +1,7 @@
+D:\Programming\CSharpulka\Lab6\bin\Debug\Lab6.exe.config
+D:\Programming\CSharpulka\Lab6\bin\Debug\Lab6.exe
+D:\Programming\CSharpulka\Lab6\bin\Debug\Lab6.pdb
+D:\Programming\CSharpulka\Lab6\obj\Debug\Lab6.csprojAssemblyReference.cache
+D:\Programming\CSharpulka\Lab6\obj\Debug\Lab6.csproj.CoreCompileInputs.cache
+D:\Programming\CSharpulka\Lab6\obj\Debug\Lab6.exe
+D:\Programming\CSharpulka\Lab6\obj\Debug\Lab6.pdb
