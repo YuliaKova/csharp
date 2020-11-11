@@ -1,0 +1,7 @@
+D:\Programming\CSharpulka\SamostiynaRobota\bin\Debug\SamostiynaRobota.exe.config
+D:\Programming\CSharpulka\SamostiynaRobota\bin\Debug\SamostiynaRobota.exe
+D:\Programming\CSharpulka\SamostiynaRobota\bin\Debug\SamostiynaRobota.pdb
+D:\Programming\CSharpulka\SamostiynaRobota\obj\Debug\SamostiynaRobota.csprojAssemblyReference.cache
+D:\Programming\CSharpulka\SamostiynaRobota\obj\Debug\SamostiynaRobota.csproj.CoreCompileInputs.cache
+D:\Programming\CSharpulka\SamostiynaRobota\obj\Debug\SamostiynaRobota.exe
+D:\Programming\CSharpulka\SamostiynaRobota\obj\Debug\SamostiynaRobota.pdb
