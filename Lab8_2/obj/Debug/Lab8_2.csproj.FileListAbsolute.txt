@@ -1,0 +1,7 @@
+D:\Programming\CSharpulka\Lab8_2\bin\Debug\Lab8_2.exe.config
+D:\Programming\CSharpulka\Lab8_2\bin\Debug\Lab8_2.exe
+D:\Programming\CSharpulka\Lab8_2\bin\Debug\Lab8_2.pdb
+D:\Programming\CSharpulka\Lab8_2\obj\Debug\Lab8_2.csproj.CoreCompileInputs.cache
+D:\Programming\CSharpulka\Lab8_2\obj\Debug\Lab8_2.exe
+D:\Programming\CSharpulka\Lab8_2\obj\Debug\Lab8_2.pdb
+D:\Programming\CSharpulka\Lab8_2\obj\Debug\Lab8_2.csprojAssemblyReference.cache
