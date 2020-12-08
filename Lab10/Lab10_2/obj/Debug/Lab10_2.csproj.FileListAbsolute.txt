@@ -1,0 +1,7 @@
+D:\Programming\CSharpulka\Lab10\Lab10_2\bin\Debug\Lab10_2.exe.config
+D:\Programming\CSharpulka\Lab10\Lab10_2\bin\Debug\Lab10_2.exe
+D:\Programming\CSharpulka\Lab10\Lab10_2\bin\Debug\Lab10_2.pdb
+D:\Programming\CSharpulka\Lab10\Lab10_2\obj\Debug\Lab10_2.csprojAssemblyReference.cache
+D:\Programming\CSharpulka\Lab10\Lab10_2\obj\Debug\Lab10_2.csproj.CoreCompileInputs.cache
+D:\Programming\CSharpulka\Lab10\Lab10_2\obj\Debug\Lab10_2.exe
+D:\Programming\CSharpulka\Lab10\Lab10_2\obj\Debug\Lab10_2.pdb
