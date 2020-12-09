@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Lab9
@@ -28,8 +29,6 @@ namespace Lab9
         public double area;
         public double length;
 
-        protected Random random = new Random();
-
         public abstract void Area();
         public abstract void Length();
         public abstract void Draw();
@@ -38,8 +37,11 @@ namespace Lab9
 
     class Square : Shape
     {
+        Random random = new Random();
+
         public Square(string name)
         {
+
             this.name = name;
             size = random.Next(1, 100);
             color = (ConsoleColor)random.Next(16);
@@ -50,7 +52,7 @@ namespace Lab9
         {
             this.name = name;
             this.size = size;
-            color = (ConsoleColor)random.Next(16);
+            color = (ConsoleColor)new Random().Next(16);
             numberOfApexes = 4;
         }
 
@@ -84,8 +86,11 @@ namespace Lab9
     }
     class Circle : Shape
     {
+        Random random = new Random();
+
         public Circle(string name)
         {
+
             this.name = name;
             size = random.Next(1, 100);
             color = (ConsoleColor)random.Next(16);
@@ -96,7 +101,7 @@ namespace Lab9
         {
             this.name = name;
             this.size = size;
-            color = (ConsoleColor)random.Next(16);
+            color = (ConsoleColor)new Random().Next(16);
             numberOfApexes = 0;
         }
 
@@ -130,15 +135,18 @@ namespace Lab9
 
     class Triangle : Shape
     {
+        Random random = new Random();
+
         double size2;
 
         public Triangle(string name)
         {
+
             this.name = name;
             size = random.Next(1, 100);
             size2 = Math.Sqrt(2 * size * size);
             color = (ConsoleColor)random.Next(16);
-            numberOfApexes = 4;
+            numberOfApexes = 3;
         }
 
         public Triangle(string name, int size, int size2)
@@ -146,8 +154,8 @@ namespace Lab9
             this.name = name;
             this.size = size;
             this.size2 = size2;
-            color = (ConsoleColor)random.Next(16);
-            numberOfApexes = 4;
+            color = (ConsoleColor)new Random().Next(16);
+            numberOfApexes = 3;
         }
 
         public Triangle(string name, int size, int size2, ConsoleColor color)
@@ -156,7 +164,7 @@ namespace Lab9
             this.size = size;
             this.size2 = size2;
             this.color = color;
-            numberOfApexes = 4;
+            numberOfApexes = 3;
         }
 
         public override void Area()
@@ -209,34 +217,16 @@ namespace Lab9
         }
         public void DeleteShape(string name)
         {
-            foreach (Shape i in shapes)
-            {
-                if (i.name == name)
-                {
-                    shapes.Remove(i);
-                }
-            }
+            shapes.RemoveAll(i => i.name == name);
         }
 
         public void DeleteShape(int apexes)
         {
-            foreach (Shape i in shapes)
-            {
-                if (i.numberOfApexes == apexes)
-                {
-                    shapes.Remove(i);
-                }
-            }
+            shapes.RemoveAll(i => i.numberOfApexes == apexes);
         }
         public void DeleteShape(double area)
         {
-            foreach (Shape i in shapes)
-            {
-                if (i.area > area)
-                {
-                    shapes.Remove(i);
-                }
-            }
+            shapes.RemoveAll(i => i.area == area);
         }
         public void Draw()
         {
@@ -257,7 +247,43 @@ namespace Lab9
     {
         static void Main(string[] args)
         {
-            
+            Square sq = new Square("square");
+            Thread.Sleep(200);
+
+            Circle cr = new Circle("circle");
+            Thread.Sleep(200);
+
+            Triangle tr = new Triangle("triangle");
+            Thread.Sleep(200);
+
+
+            sq.Area();
+            sq.Length();
+            cr.Area();
+            cr.Length();
+            tr.Area();
+            tr.Length();
+
+
+            Picture picture = new Picture(3);
+            picture.AddShape(sq);
+            picture.AddShape(cr);
+            picture.AddShape(tr);
+
+            Console.WriteLine("Length of list : {0}", picture.lengthOfList);
+
+            Console.WriteLine("Painter.Draw(sq)");
+            Painter.Draw(sq);
+
+            Console.WriteLine("picture:");
+            picture.Draw();
+
+            Console.WriteLine("-squre has been deleted-");
+            picture.DeleteShape("square");
+
+            Console.WriteLine("picture[0].name : {0}", picture[0].name);
+
+            Console.ReadLine();
         }
     }
 }
